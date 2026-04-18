@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Santa Fe Hinchada – La Comunidad del León</title>
+  <meta name="description"
+    content="La plataforma oficial de la hinchada de Independiente Santa Fe. Conecta, transporta, compra boletas y merchandising." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- ============================
+       NAVBAR
+  ============================ -->
+  <nav class="navbar" role="navigation" aria-label="Navegación principal">
+    <div class="container">
+      <div class="navbar__inner">
+        <a href="#" data-page="home" class="navbar__logo" aria-label="Santa Fe Hinchada - Inicio">
+          <div class="navbar__logo-icon" aria-hidden="true">
+            <img src="Leon.png" alt="" style="width:48px;height:48px;object-fit:cover;object-position:center top;border-radius:50%;">
+          </div>
+          Santa Fe Hinchada
+        </a>
+
+        <ul class="navbar__nav" role="list">
+          <li><a href="#" data-page="comunidad" class="navbar__link">Comunidad</a></li>
+          <li><a href="#" data-page="transporte" class="navbar__link">Transporte</a></li>
+          <li><a href="#" data-page="boletas" class="navbar__link">Boletas</a></li>
+          <li><a href="#" data-page="merch" class="navbar__link">Merchandising</a></li>
+          <li><a href="#" data-page="noticias" class="navbar__link">Noticias</a></li>
+        </ul>
+
+        <div class="navbar__actions">
+          <a href="#" data-page="registro" class="btn btn--primary btn--sm">Unirme</a>
+          <button class="navbar__menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false"
+            aria-controls="mobileNav">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              aria-hidden="true">
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile nav -->
+  <nav class="mobile-nav" id="mobileNav" aria-label="Menú móvil">
+    <a href="#" data-page="comunidad" onclick="closeMobileNav()">🤝 Comunidad</a>
+    <a href="#" data-page="transporte" onclick="closeMobileNav()">🚌 Transporte</a>
+    <a href="#" data-page="boletas" onclick="closeMobileNav()">🎫 Boletas</a>
+    <a href="#" data-page="merch" onclick="closeMobileNav()">👕 Merchandising</a>
+    <a href="#" data-page="noticias" onclick="closeMobileNav()">📰 Noticias</a>
+    <a href="#" data-page="registro" onclick="closeMobileNav()" style="margin-top:8px;">
+      <span style="color:var(--red-400);font-weight:800;">→ Unirme al León</span>
+    </a>
+  </nav>
+
+  <!-- Back button (shown when a page is open) -->
+  <button class="page-back" id="pageBackBtn" aria-label="Volver al inicio">
+    ← Volver
+  </button>
+
+  <!-- ============================
+       HERO
+  ============================ -->
+  <section class="hero" id="inicio" aria-label="Bienvenida">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__pattern" aria-hidden="true"></div>
+    <div class="container">
+      <div class="hero__content">
+        <div class="hero__text">
+          <div class="hero__eyebrow" aria-label="Bogotá, Colombia">
+            Bogotá, Colombia · Desde 1941
+          </div>
+          <h1 class="hero__title">
+            Siente el<br />
+            <span>Rugido</span><br />
+            del León
+          </h1>
+          <p class="hero__desc">
+            La comunidad digital de los hinchas de Independiente Santa Fe.
+            Conecta con otros cardenales, coordina transporte al estadio,
+            consigue boletas y luce los colores del León.
+          </p>
+          <div class="hero__actions">
+            <a href="#" data-page="registro" class="btn btn--primary btn--lg">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                aria-hidden="true">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <line x1="19" y1="8" x2="19" y2="14" />
+                <line x1="22" y1="11" x2="16" y2="11" />
+              </svg>
+              Únete Gratis
+            </a>
+            <a href="#" data-page="comunidad" class="btn btn--outline btn--lg">
+              Ver la Comunidad
+            </a>
+          </div>
+          <div class="hero__stats" role="list" aria-label="Estadísticas de la comunidad">
+            <div role="listitem">
+              <div class="hero__stat-value">12K+</div>
+              <div class="hero__stat-label">Hinchas</div>
+            </div>
+            <div role="listitem">
+              <div class="hero__stat-value">340+</div>
+              <div class="hero__stat-label">Rutas activas</div>
+            </div>
+            <div role="listitem">
+              <div class="hero__stat-value">98%</div>
+              <div class="hero__stat-label">Satisfacción</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__crest"><img src="Leon.png" alt="León Santa Fe"/></div>
+          <div class="hero__floating-cards">
+            <div class="hero__float">
+              <div class="float-dot"></div>
+              342 hinchas en camino
+            </div>
+            <div class="hero__float">
+              <div class="float-dot"></div>
+              Próximo partido: Sáb 19:00
+            </div>
+            <div class="hero__float">
+              <div class="float-dot"></div>
+              🎫 Boletas disponibles
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features scrolling bar -->
+  <div class="features-bar" aria-hidden="true">
+    <div class="features-bar__track">
+      <div class="features-bar__item">🦁 El León de Bogotá</div>
+      <div class="features-bar__item">🎫 Compra y vende boletas</div>
+      <div class="features-bar__item">🚌 Transporte al estadio</div>
+      <div class="features-bar__item">👕 Merchandising oficial</div>
+      <div class="features-bar__item">🤝 Conecta con hinchas</div>
+      <div class="features-bar__item">📰 Noticias en tiempo real</div>
+      <div class="features-bar__item">🏆 Siempre con Santa Fe</div>
+      <!-- duplicado para loop continuo -->
+      <div class="features-bar__item">🦁 El León de Bogotá</div>
+      <div class="features-bar__item">🎫 Compra y vende boletas</div>
+      <div class="features-bar__item">🚌 Transporte al estadio</div>
+      <div class="features-bar__item">👕 Merchandising oficial</div>
+      <div class="features-bar__item">🤝 Conecta con hinchas</div>
+      <div class="features-bar__item">📰 Noticias en tiempo real</div>
+      <div class="features-bar__item">🏆 Siempre con Santa Fe</div>
+    </div>
+  </div>
+
+  <!-- ============================
+       COMUNIDAD
+  ============================ -->
+  <div class="page-overlay" id="page-comunidad">
+  <section class="section" id="comunidad" aria-labelledby="comunidad-title">
+    <div class="container">
+      <div class="badge">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+        </svg>
+        Comunidad
+      </div>
+      <div style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:16px;">
+        <div>
+          <h2 class="section-title" id="comunidad-title">Conecta con los<br />Cardenales</h2>
+          <p class="section-subtitle">Hinchas de todos los rincones de Bogotá y Colombia, unidos por el León.</p>
+        </div>
+        <a href="#" data-page="registro" class="btn btn--primary">Ver todos los hinchas</a>
+      </div>
+
+      <div class="community__grid" role="list" aria-label="Hinchas destacados">
+        <article class="community-card" role="listitem">
+          <div class="community-card__avatar" aria-hidden="true">🧔</div>
+          <div class="community-card__name">Carlos Moreno</div>
+          <div class="community-card__role">Líder de Barra</div>
+          <p class="community-card__bio">Hincha de corazón desde los 8 años. Organizo viajes en chiva desde Kennedy
+            hasta El Campín para cada partido de local.</p>
+          <div class="community-card__footer">
+            <span class="community-card__location">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              Kennedy, Bogotá
+            </span>
+            <button class="community-card__connect" onclick="showToast('¡Solicitud de conexión enviada a Carlos!')"
+              aria-label="Conectar con Carlos Moreno">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                aria-hidden="true">
+                <line x1="19" y1="8" x2="19" y2="14" />
+                <line x1="22" y1="11" x2="16" y2="11" />
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+              </svg>
+              Conectar
+            </button>
+          </div>
+        </article>
+
+        <article class="community-card" role="listitem">
+          <div class="community-card__avatar" aria-hidden="true">👩</div>
+          <div class="community-card__name">Valentina Rueda</div>
+          <div class="community-card__role">Periodista Deportiva</div>
+          <p class="community-card__bio">Cubro Santa Fe para varios medios. Comparto análisis tácticos y crónicas de
+            partido. El fútbol femenino también es Santa Fe.</p>
+          <div class="community-card__footer">
+            <span class="community-card__location">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              Chapinero, Bogotá
+            </span>
+            <button class="community-card__connect" onclick="showToast('¡Solicitud de conexión enviada a Valentina!')"
+              aria-label="Conectar con Valentina Rueda">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                aria-hidden="true">
+                <line x1="19" y1="8" x2="19" y2="14" />
+                <line x1="22" y1="11" x2="16" y2="11" />
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+              </svg>
+              Conectar
+            </button>
+          </div>
+        </article>
+
+        <article class="community-card" role="listitem">
+          <div class="community-card__avatar" aria-hidden="true">🧑</div>
+          <div class="community-card__name">Andrés Peñaloza</div>
+          <div class="community-card__role">Coleccionista</div>
+          <p class="community-card__bio">Tengo más de 200 piezas de merchandising de Santa Fe desde 1980. Vendo, cambio
+            y compro artículos históricos del León.</p>
+          <div class="community-card__footer">
+            <span class="community-card__location">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              Usaquén, Bogotá
+            </span>
+            <button class="community-card__connect" onclick="showToast('¡Solicitud de conexión enviada a Andrés!')"
+              aria-label="Conectar con Andrés Peñaloza">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                aria-hidden="true">
+                <line x1="19" y1="8" x2="19" y2="14" />
+                <line x1="22" y1="11" x2="16" y2="11" />
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+              </svg>
+              Conectar
+            </button>
+          </div>
+        </article>
+      </div>
+
+      <div class="community__cta">
+        <div class="community__cta-text">
+          <h3 class="community__cta-title">¿Eres organizador de barra?</h3>
+          <p class="community__cta-desc">Crea tu grupo, gestiona tus miembros y coordina todo desde un solo lugar.</p>
+        </div>
+        <div style="display:flex; gap:12px; flex-wrap:wrap;">
+          <a href="#" data-page="registro" class="btn btn--primary">Crear mi grupo</a>
+          <a href="#" class="btn btn--outline" onclick="showToast('Sección de grupos próximamente.')">Explorar
+            grupos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div><!-- /page-comunidad -->
+
+  <div class="page-overlay" id="page-transporte">
+  <section class="section section--light" id="transporte" aria-labelledby="transporte-title">
+    <div class="container">
+      <div class="badge">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M9 17H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-6M9 17l3 3 3-3M12 17V9" />
+        </svg>
+        Transporte
+      </div>
+      <h2 class="section-title" id="transporte-title">Al Campín Juntos,<br />Como un Solo León</h2>
+      <p class="section-subtitle">Coordina tu viaje al estadio con otros hinchas. Seguro, económico y lleno de ambiente
+        cardenal.</p>
+
+      <div class="transport__grid">
+        <div>
+          <div class="transport-card">
+            <div class="transport-card__header">
+              <div class="transport-card__title">Rutas Disponibles</div>
+              <div class="transport-card__icon" aria-hidden="true">🚌</div>
+            </div>
+            <div class="transport-card__body">
+
+              <div class="transport-route">
+                <div class="transport-route__icon" aria-hidden="true">🚌</div>
+                <div class="transport-route__info">
+                  <div class="transport-route__name">Chiva Kennedy → El Campín</div>
+                  <div class="transport-route__detail">Sáb 17:00 · $18,000 COP · Org. Carlos M.</div>
+                </div>
+                <span class="transport-route__seats">12 cupos</span>
+              </div>
+
+              <div class="transport-route">
+                <div class="transport-route__icon" aria-hidden="true">🚗</div>
+                <div class="transport-route__info">
+                  <div class="transport-route__name">Carpool Suba Norte</div>
+                  <div class="transport-route__detail">Sáb 16:30 · $12,000 COP · 4 puestos</div>
+                </div>
+                <span class="transport-route__seats">3 cupos</span>
+              </div>
+
+              <div class="transport-route">
+                <div class="transport-route__icon" aria-hidden="true">🚌</div>
+                <div class="transport-route__info">
+                  <div class="transport-route__name">Bus Bosa - Estadio</div>
+                  <div class="transport-route__detail">Sáb 16:00 · $15,000 COP · Org. Barras SF</div>
+                </div>
+                <span class="transport-route__seats">28 cupos</span>
+              </div>
+
+              <div class="transport-route">
+                <div class="transport-route__icon" aria-hidden="true">🚗</div>
+                <div class="transport-route__info">
+                  <div class="transport-route__name">Carpool Usme</div>
+                  <div class="transport-route__detail">Sáb 16:45 · $10,000 COP · 3 puestos</div>
+                </div>
+                <span class="transport-route__seats">2 cupos</span>
+              </div>
+
+              <div class="transport-route">
+                <div class="transport-route__icon" aria-hidden="true">🚌</div>
+                <div class="transport-route__info">
+                  <div class="transport-route__name">Bus Ciudad Bolívar</div>
+                  <div class="transport-route__detail">Sáb 15:30 · $20,000 COP · Org. León Rojo</div>
+                </div>
+                <span class="transport-route__seats">40 cupos</span>
+              </div>
+            </div>
+            <div class="transport-card__footer">
+              <button class="btn btn--primary" style="width:100%;"
+                onclick="showToast('¡Selecciona tu ruta favorita!')">Ver todas las rutas</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="transport-form">
+          <h3 class="transport-form__title">Publicar una Ruta</h3>
+          <p style="color:var(--gray-600);font-size:.9rem;margin-bottom:24px;">¿Tienes espacio en tu vehículo o
+            organizas un bus? Publica tu ruta y conecta con hinchas.</p>
+
+          <form onsubmit="handleTransportForm(event)">
+            <div class="form-group">
+              <label class="form-label" for="ruta-origen">Punto de salida <span aria-hidden="true">*</span></label>
+              <input class="form-control" type="text" id="ruta-origen" placeholder="Ej: Av. Boyacá con Calle 80"
+                required aria-required="true" />
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="ruta-hora">Hora de salida <span aria-hidden="true">*</span></label>
+                <input class="form-control" type="time" id="ruta-hora" required aria-required="true" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="ruta-cupos">Cupos disponibles <span aria-hidden="true">*</span></label>
+                <input class="form-control" type="number" id="ruta-cupos" min="1" max="60" placeholder="4" required
+                  aria-required="true" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="ruta-tipo">Tipo de vehículo</label>
+                <select class="form-control" id="ruta-tipo">
+                  <option value="">Seleccionar</option>
+                  <option value="carro">Carro particular</option>
+                  <option value="chiva">Chiva</option>
+                  <option value="bus">Bus</option>
+                  <option value="van">Van / Furgoneta</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="ruta-precio">Precio por persona</label>
+                <input class="form-control" type="text" id="ruta-precio" placeholder="$ COP" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="ruta-notas">Notas adicionales</label>
+              <textarea class="form-control" id="ruta-notas" rows="2"
+                placeholder="Ej: Llevar hidratación, llegar 10 min antes..." style="resize:vertical;"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary" style="width:100%; margin-top:8px;">
+              Publicar mi Ruta
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div><!-- /page-transporte -->
+
+  <div class="page-overlay" id="page-boletas">
+  <section class="section" id="boletas" aria-labelledby="boletas-title">
+    <div class="container">
+      <div class="badge">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+          <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+        </svg>
+        Boletas
+      </div>
+      <div class="tickets__header">
+        <div>
+          <h2 class="section-title" id="boletas-title">Compra y Vende<br />Tu Entrada</h2>
+          <p class="section-subtitle">Mercado seguro entre hinchas. Pagos verificados y garantía de autenticidad.</p>
+        </div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <button class="btn btn--outline" style="color:var(--gray-900);border-color:var(--gray-300);"
+            onclick="showToast('Filtros disponibles próximamente')">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              aria-hidden="true">
+              <line x1="21" y1="4" x2="14" y2="4" />
+              <line x1="10" y1="4" x2="3" y2="4" />
+              <line x1="21" y1="12" x2="12" y2="12" />
+              <line x1="8" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="20" x2="16" y2="20" />
+              <line x1="12" y1="20" x2="3" y2="20" />
+              <line x1="14" y1="2" x2="14" y2="6" />
+              <line x1="8" y1="10" x2="8" y2="14" />
+              <line x1="16" y1="18" x2="16" y2="22" />
+            </svg>
+            Filtrar
+          </button>
+          <a href="#" data-page="registro" class="btn btn--primary">Vender boleta</a>
+        </div>
+      </div>
+
+      <div class="tickets__grid" role="list" aria-label="Boletas disponibles">
+
+        <article class="ticket-card ticket-card--featured" role="listitem">
+          <div class="ticket-card__tag">Destacado · 2 disponibles</div>
+          <div class="ticket-card__match">
+            <div class="ticket-card__team">
+              <div class="ticket-card__team-badge" aria-hidden="true">🦁</div>
+              <div class="ticket-card__team-name">Santa Fe</div>
+            </div>
+            <div class="ticket-card__vs" aria-label="versus">VS</div>
+            <div class="ticket-card__team">
+              <div class="ticket-card__team-badge" aria-hidden="true">🦅</div>
+              <div class="ticket-card__team-name">Millonarios</div>
+            </div>
+          </div>
+          <div class="ticket-card__body">
+            <div class="ticket-card__info">
+              <div class="ticket-card__row">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <rect x="3" y="4" width="18" height="18" rx="2" />
+                  <line x1="16" y1="2" x2="16" y2="6" />
+                  <line x1="8" y1="2" x2="8" y2="6" />
+                  <line x1="3" y1="10" x2="21" y2="10" />
+                </svg>
+                Sábado, 26 de Abril · 19:00
+              </div>
+              <div class="ticket-card__row">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                El Campín · Tribuna Oriental
+              </div>
+              <div class="ticket-card__row">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                  <circle cx="12" cy="7" r="4" />
+                </svg>
+                Vendedor verificado ✓
+              </div>
+            </div>
+            <div class="ticket-card__price-row">
+              <div class="ticket-card__price">$85,000</div>
+              <span class="ticket-card__seats">2 sillas jtas.</span>
+            </div>
+            <button class="btn btn--primary" style="width:100%;"
+              onclick="showToast('¡Redirigiendo al proceso de compra!')">Comprar ahora</button>
+          </div>
+        </article>
+
+        <article class="ticket-card" role="listitem">
+          <div class="ticket-card__match">
+            <div class="ticket-card__team">
+              <div class="ticket-card__team-badge" aria-hidden="true">🦁</div>
+              <div class="ticket-card__team-name">Santa Fe</div>
+            </div>
+            <div class="ticket-card__vs" aria-label="versus">VS</div>
+            <div class="ticket-card__team">
+              <div class="ticket-card__team-badge" aria-hidden="true">⚡</div>
+              <div class="ticket-card__team-name">Nacional</div>
+            </div>
+          </div>
+          <div class="ticket-card__body">
+            <div class="ticket-card__info">
+              <div class="ticket-card__row">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <rect x="3" y="4" width="18" height="18" rx="2" />
+                  <line x1="16" y1="2" x2="16" y2="6" />
+                  <line x1="8" y1="2" x2="8" y2="6" />
+                  <line x1="3" y1="10" x2="21" y2="10" />
+                </svg>
+                Domingo, 4 de Mayo · 18:00
+              </div>
+              <div class="ticket-card__row">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                El Campín · Tribuna Sur
+              </div>
+              <div class="ticket-card__row">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                  <circle cx="12" cy="7" r="4" />
+                </svg>
+                Vendedor verificado ✓
+              </div>
+            </div>
+            <div class="ticket-card__price-row">
+              <div class="ticket-card__price">$60,000</div>
+              <span class="ticket-card__seats">1 boleta</span>
+            </div>
+            <button class="btn btn--primary" style="width:100%;"
+              onclick="showToast('¡Redirigiendo al proceso de compra!')">Comprar ahora</button>
+          </div>
+        </article>
+
+        <article class="ticket-card" role="listitem">
+          <div class="ticket-card__match">
+            <div class="ticket-card__team">
+              <div class="ticket-card__team-badge" aria-hidden="true">🦁</div>
+              <div class="ticket-card__team-name">Santa Fe</div>
+            </div>
+            <div class="ticket-card__vs" aria-label="versus">VS</div>
+            <div class="ticket-card__team">
+              <div class="ticket-card__team-badge" aria-hidden="true">🐎</div>
+              <div class="ticket-card__team-name">Junior</div>
+            </div>
+          </div>
+          <div class="ticket-card__body">
+            <div class="ticket-card__info">
+              <div class="ticket-card__row">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <rect x="3" y="4" width="18" height="18" rx="2" />
+                  <line x1="16" y1="2" x2="16" y2="6" />
+                  <line x1="8" y1="2" x2="8" y2="6" />
+                  <line x1="3" y1="10" x2="21" y2="10" />
+                </svg>
+                Martes, 13 de Mayo · 20:00
+              </div>
+              <div class="ticket-card__row">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                El Campín · Palco VIP
+              </div>
+              <div class="ticket-card__row">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                  <circle cx="12" cy="7" r="4" />
+                </svg>
+                Vendedor verificado ✓
+              </div>
+            </div>
+            <div class="ticket-card__price-row">
+              <div class="ticket-card__price">$180,000</div>
+              <span class="ticket-card__seats">2 palcos</span>
+            </div>
+            <button class="btn btn--primary" style="width:100%;"
+              onclick="showToast('¡Redirigiendo al proceso de compra!')">Comprar ahora</button>
+          </div>
+        </article>
+
+      </div>
+
+      <div style="text-align:center; margin-top:40px;">
+        <a href="#" data-page="registro" class="btn btn--outline" style="color:var(--gray-900);border-color:var(--gray-300);">
+          Ver todas las boletas disponibles
+        </a>
+      </div>
+    </div>
+  </section>
+  </div><!-- /page-boletas -->
+
+  <div class="page-overlay" id="page-merch">
+  <section class="section section--dark" id="merch" aria-labelledby="merch-title">
+    <div class="container">
+      <div class="badge badge--white">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+          <line x1="3" y1="6" x2="21" y2="6" />
+          <path d="M16 10a4 4 0 0 1-8 0" />
+        </svg>
+        Merchandising
+      </div>
+      <div
+        style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:16px; margin-bottom:0;">
+        <div>
+          <h2 class="section-title" id="merch-title">Luce los Colores<br />del León</h2>
+          <p class="section-subtitle section-subtitle--white">Camisetas, gorras, bufandas y mucho más. Compra y vende
+            artículos oficiales entre hinchas.</p>
+        </div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <button class="btn btn--outline" onclick="showToast('Filtros de categorías próximamente')">Todas las
+            categorías</button>
+          <a href="#" data-page="registro" class="btn btn--primary">Vender artículo</a>
+        </div>
+      </div>
+
+      <div class="merch__grid" role="list" aria-label="Productos de merchandising">
+
+        <article class="merch-card" role="listitem">
+          <div class="merch-card__img" aria-label="Camiseta local 2025">
+            👕
+            <span class="merch-card__badge">Nuevo</span>
+            <button class="merch-card__wishlist" onclick="showToast('Agregado a favoritos')"
+              aria-label="Guardar en favoritos">❤️</button>
+          </div>
+          <div class="merch-card__body">
+            <div class="merch-card__category">Camiseta</div>
+            <div class="merch-card__name">Camiseta Local Santa Fe 2025</div>
+            <div class="merch-card__seller">Vendido por: TiendaOficialSF</div>
+            <div class="merch-card__footer">
+              <div class="merch-card__price"><span>COP</span> 280.000</div>
+              <button class="merch-card__add" onclick="showToast('¡Camiseta agregada al carrito!')"
+                aria-label="Agregar camiseta al carrito">+</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="merch-card" role="listitem">
+          <div class="merch-card__img" aria-label="Bufanda cardenal">
+            🧣
+            <span class="merch-card__badge" style="background:var(--gold);color:var(--gray-900);">Usado</span>
+            <button class="merch-card__wishlist" onclick="showToast('Agregado a favoritos')"
+              aria-label="Guardar en favoritos">🤍</button>
+          </div>
+          <div class="merch-card__body">
+            <div class="merch-card__category">Accesorios</div>
+            <div class="merch-card__name">Bufanda Cardenal Edición Especial</div>
+            <div class="merch-card__seller">Vendido por: Andrés P.</div>
+            <div class="merch-card__footer">
+              <div class="merch-card__price"><span>COP</span> 45.000</div>
+              <button class="merch-card__add" onclick="showToast('¡Bufanda agregada al carrito!')"
+                aria-label="Agregar bufanda al carrito">+</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="merch-card" role="listitem">
+          <div class="merch-card__img" aria-label="Gorra del León">
+            🧢
+            <span class="merch-card__badge">Nuevo</span>
+            <button class="merch-card__wishlist" onclick="showToast('Agregado a favoritos')"
+              aria-label="Guardar en favoritos">🤍</button>
+          </div>
+          <div class="merch-card__body">
+            <div class="merch-card__category">Gorras</div>
+            <div class="merch-card__name">Gorra Snapback León de Bogotá</div>
+            <div class="merch-card__seller">Vendido por: TiendaOficialSF</div>
+            <div class="merch-card__footer">
+              <div class="merch-card__price"><span>COP</span> 65.000</div>
+              <button class="merch-card__add" onclick="showToast('¡Gorra agregada al carrito!')"
+                aria-label="Agregar gorra al carrito">+</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="merch-card" role="listitem">
+          <div class="merch-card__img" aria-label="Camiseta retro 1941">
+            🏆
+            <span class="merch-card__badge" style="background:var(--gold);color:var(--gray-900);">Vintage</span>
+            <button class="merch-card__wishlist" onclick="showToast('Agregado a favoritos')"
+              aria-label="Guardar en favoritos">🤍</button>
+          </div>
+          <div class="merch-card__body">
+            <div class="merch-card__category">Colección</div>
+            <div class="merch-card__name">Camiseta Retro 1941 – Fundación</div>
+            <div class="merch-card__seller">Vendido por: Colección Cardenal</div>
+            <div class="merch-card__footer">
+              <div class="merch-card__price"><span>COP</span> 420.000</div>
+              <button class="merch-card__add" onclick="showToast('¡Camiseta retro agregada al carrito!')"
+                aria-label="Agregar camiseta retro al carrito">+</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div style="text-align:center; margin-top:40px;">
+        <a href="#" data-page="registro" class="btn btn--white btn--lg">Ver todo el catálogo</a>
+      </div>
+    </div>
+  </section>
+  </div><!-- /page-merch -->
+
+  <div class="page-overlay" id="page-noticias">
+  <section class="section section--light" id="noticias" aria-labelledby="noticias-title">
+    <div class="container">
+      <div class="badge">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path
+            d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2" />
+          <path d="M18 14h-8M15 18h-5M10 6h8v4h-8V6Z" />
+        </svg>
+        Noticias y Anuncios
+      </div>
+      <h2 class="section-title" id="noticias-title">Siempre Informado,<br />Siempre Cardenal</h2>
+      <p class="section-subtitle">Noticias del club, anuncios de partidos y todo lo que necesitas saber del León.</p>
+
+      <div class="news__grid">
+        <article class="news-featured">
+          <div class="news-featured__img" role="img" aria-label="Noticia destacada: Santa Fe clasificó a final de Copa">
+            🏆
+            <div class="news-featured__img-overlay" aria-hidden="true"></div>
+            <span class="news-featured__category">Copa Colombia</span>
+          </div>
+          <div class="news-featured__body">
+            <div class="news-featured__meta">
+              <span>15 de Abril, 2026</span>
+              <span>·</span>
+              <span>5 min de lectura</span>
+              <span>·</span>
+              <span style="color:var(--red-600);font-weight:600;">2.3K vistas</span>
+            </div>
+            <h3 class="news-featured__title">Santa Fe golea 3-0 y clasifica a la final de la Copa Colombia</h3>
+            <p class="news-featured__excerpt">
+              Con un espectacular partido en El Campín, los cardenales derrotaron al conjunto antioqueño y aseguraron su
+              lugar en la gran final.
+              Luis y Sebastian fueron los grandes protagonistas de la noche roja y blanca.
+            </p>
+            <a href="#" class="btn btn--primary btn--sm" onclick="showToast('Noticia completa próximamente')">Leer
+              más</a>
+          </div>
+        </article>
+
+        <div class="news-list" role="list" aria-label="Otras noticias">
+          <article class="news-item" role="listitem">
+            <div class="news-item__img" aria-hidden="true">🏃</div>
+            <div>
+              <div class="news-item__category">Plantel</div>
+              <div class="news-item__title">Santa Fe confirma fichaje de mediocampista internacional</div>
+              <div class="news-item__date">14 Abr 2026</div>
+            </div>
+          </article>
+          <article class="news-item" role="listitem">
+            <div class="news-item__img" aria-hidden="true">📅</div>
+            <div>
+              <div class="news-item__category">Liga BetPlay</div>
+              <div class="news-item__title">Programación de partidos de Santa Fe: abril y mayo</div>
+              <div class="news-item__date">12 Abr 2026</div>
+            </div>
+          </article>
+          <article class="news-item" role="listitem">
+            <div class="news-item__img" aria-hidden="true">🎟️</div>
+            <div>
+              <div class="news-item__category">Anuncio</div>
+              <div class="news-item__title">Boletería para el clásico bogotano ya disponible</div>
+              <div class="news-item__date">10 Abr 2026</div>
+            </div>
+          </article>
+          <article class="news-item" role="listitem">
+            <div class="news-item__img" aria-hidden="true">👕</div>
+            <div>
+              <div class="news-item__category">Merchandising</div>
+              <div class="news-item__title">Nueva camiseta de visitante 2026 ya en preventa</div>
+              <div class="news-item__date">8 Abr 2026</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div><!-- /page-noticias -->
+
+  <div class="page-overlay" id="page-registro">
+  <section class="section register" id="registro" aria-labelledby="registro-title">
+    <div class="container">
+      <div class="register__grid">
+        <div>
+          <div class="badge badge--gold">Únete Gratis</div>
+          <h2 class="section-title" id="registro-title" style="color:var(--white);">Sé Parte de<br />la
+            Familia<br /><span style="color:var(--red-400);">Cardenal</span></h2>
+          <p class="section-subtitle section-subtitle--white">Regístrate gratis y accede a todos los beneficios de la
+            comunidad más apasionada del fútbol colombiano.</p>
+
+          <ul class="register__benefits" aria-label="Beneficios de registro">
+            <li class="register__benefit">
+              <div class="register__benefit-icon" aria-hidden="true">🤝</div>
+              <div class="register__benefit-text">
+                <h4>Conecta con hinchas</h4>
+                <p>Crea tu perfil, sigue a otros cardenales y forma tu grupo.</p>
+              </div>
+            </li>
+            <li class="register__benefit">
+              <div class="register__benefit-icon" aria-hidden="true">🚌</div>
+              <div class="register__benefit-text">
+                <h4>Coordina transporte</h4>
+                <p>Publica y reserva rutas al estadio con total seguridad.</p>
+              </div>
+            </li>
+            <li class="register__benefit">
+              <div class="register__benefit-icon" aria-hidden="true">🎫</div>
+              <div class="register__benefit-text">
+                <h4>Mercado de boletas</h4>
+                <p>Compra y vende entradas con garantía entre hinchas verificados.</p>
+              </div>
+            </li>
+            <li class="register__benefit">
+              <div class="register__benefit-icon" aria-hidden="true">👕</div>
+              <div class="register__benefit-text">
+                <h4>Tienda de merchandising</h4>
+                <p>Accede a artículos exclusivos y publica los tuyos en la comunidad.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="register__form">
+          <h3 class="register__form-title">Crear cuenta</h3>
+          <p class="register__form-sub">¿Ya tienes cuenta? <a href="#"
+              onclick="showToast('Inicio de sesión próximamente')"
+              style="color:var(--red-400);text-decoration:underline;">Inicia sesión</a></p>
+
+          <form onsubmit="handleRegisterForm(event)" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="reg-nombre">Nombre <span aria-hidden="true">*</span></label>
+                <input class="form-control" type="text" id="reg-nombre" placeholder="Tu nombre" required
+                  aria-required="true" autocomplete="given-name" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="reg-apellido">Apellido <span aria-hidden="true">*</span></label>
+                <input class="form-control" type="text" id="reg-apellido" placeholder="Tu apellido" required
+                  aria-required="true" autocomplete="family-name" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="reg-email">Correo electrónico <span aria-hidden="true">*</span></label>
+              <input class="form-control" type="email" id="reg-email" placeholder="tucorreo@ejemplo.com" required
+                aria-required="true" autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="reg-ciudad">Ciudad</label>
+              <input class="form-control" type="text" id="reg-ciudad" placeholder="Bogotá"
+                autocomplete="address-level2" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="reg-password">Contraseña <span aria-hidden="true">*</span></label>
+              <div style="position:relative;">
+                <input class="form-control" type="password" id="reg-password" placeholder="Mínimo 8 caracteres" required
+                  aria-required="true" autocomplete="new-password" style="padding-right:48px;" />
+                <button type="button" onclick="togglePassword()"
+                  style="position:absolute;right:12px;top:50%;transform:translateY(-50%);color:rgba(255,255,255,.5);font-size:1.1rem;"
+                  aria-label="Mostrar u ocultar contraseña">👁</button>
+              </div>
+            </div>
+            <div class="register__terms">
+              <input type="checkbox" id="reg-terms" required aria-required="true" />
+              <label for="reg-terms">Acepto los <a href="#" onclick="return false;">Términos de uso</a> y la <a href="#"
+                  onclick="return false;">Política de privacidad</a> de Santa Fe Hinchada.</label>
+            </div>
+            <button type="submit" class="btn btn--primary" style="width:100%; margin-bottom:16px;">
+              Crear mi cuenta gratis
+            </button>
+
+            <div class="register__divider">o regístrate con</div>
+            <div class="register__social">
+              <button type="button" class="register__social-btn"
+                onclick="showToast('Registro con Google próximamente')">
+                <svg width="18" height="18" viewBox="0 0 48 48" aria-hidden="true">
+                  <path fill="#EA4335"
+                    d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z" />
+                  <path fill="#4285F4"
+                    d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z" />
+                  <path fill="#FBBC05"
+                    d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z" />
+                  <path fill="#34A853"
+                    d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.18 1.48-4.97 2.29-8.16 2.29-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z" />
+                </svg>
+                Google
+              </button>
+              <button type="button" class="register__social-btn"
+                onclick="showToast('Registro con Facebook próximamente')">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="#1877F2" aria-hidden="true">
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                </svg>
+                Facebook
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div><!-- /page-registro -->
+
+  <!-- ============================
+       FOOTER
+  ============================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <div class="footer__logo-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 130" width="48" height="52">
+                <polygon points="70,90 95,115 110,85 90,70" fill="#FFD700" opacity="0.25"/>
+                <polygon points="75,95 105,120 115,95 95,78" fill="none" stroke="#FFD700" stroke-width="1.5" opacity="0.5"/>
+                <polygon points="10,80 30,110 45,90 25,65" fill="#FFD700" opacity="0.15"/>
+                <line x1="85" y1="100" x2="115" y2="70" stroke="#FFD700" stroke-width="1" opacity="0.4"/>
+                <line x1="20" y1="95" x2="5" y2="115" stroke="#FFD700" stroke-width="0.8" opacity="0.3"/>
+                <polygon points="60,8 54,28 66,28" fill="#111"/>
+                <polygon points="60,8 57,26 63,26" fill="#FFD700" opacity="0.6"/>
+                <polygon points="42,12 40,32 52,26" fill="#111"/>
+                <polygon points="28,22 30,42 42,32" fill="#111"/>
+                <polygon points="18,38 24,56 36,44" fill="#111"/>
+                <polygon points="14,56 22,70 34,60" fill="#111"/>
+                <polygon points="78,12 80,32 68,26" fill="#111"/>
+                <polygon points="92,22 90,42 78,32" fill="#111"/>
+                <polygon points="102,38 96,56 84,44" fill="#111"/>
+                <polygon points="106,56 98,70 86,60" fill="#111"/>
+                <polygon points="36,10 35,28 46,20" fill="#FFD700" opacity="0.5"/>
+                <polygon points="84,10 85,28 74,20" fill="#FFD700" opacity="0.5"/>
+                <ellipse cx="60" cy="70" rx="40" ry="42" fill="#111"/>
+                <ellipse cx="60" cy="70" rx="38" ry="40" fill="none" stroke="#FFD700" stroke-width="1.2" opacity="0.6"/>
+                <line x1="28" y1="45" x2="38" y2="65" stroke="#FFD700" stroke-width="1.2" opacity="0.5"/>
+                <line x1="92" y1="45" x2="82" y2="65" stroke="#FFD700" stroke-width="1.2" opacity="0.5"/>
+                <ellipse cx="60" cy="72" rx="26" ry="24" fill="#1e1e1e"/>
+                <polygon points="60,50 44,58 48,72" fill="#2e2e2e"/>
+                <polygon points="60,50 76,58 72,72" fill="#282828"/>
+                <polygon points="44,56 56,52 54,60 42,62" fill="#111"/>
+                <polygon points="76,56 64,52 66,60 78,62" fill="#111"/>
+                <ellipse cx="50" cy="63" rx="5" ry="4" fill="#111" stroke="#FFD700" stroke-width="1"/>
+                <ellipse cx="70" cy="63" rx="5" ry="4" fill="#111" stroke="#FFD700" stroke-width="1"/>
+                <ellipse cx="50" cy="63" rx="3" ry="2.5" fill="#FFD700"/>
+                <ellipse cx="70" cy="63" rx="3" ry="2.5" fill="#FFD700"/>
+                <ellipse cx="50" cy="63" rx="1.8" ry="2" fill="#111"/>
+                <ellipse cx="70" cy="63" rx="1.8" ry="2" fill="#111"/>
+                <circle cx="50.7" cy="62.3" r="0.5" fill="white"/>
+                <circle cx="70.7" cy="62.3" r="0.5" fill="white"/>
+                <line x1="44" y1="57" x2="56" y2="59" stroke="#FFD700" stroke-width="2" stroke-linecap="round"/>
+                <line x1="64" y1="59" x2="76" y2="57" stroke="#FFD700" stroke-width="2" stroke-linecap="round"/>
+                <polygon points="57,65 63,65 61,74 59,74" fill="#111"/>
+                <polygon points="54,74 66,74 63,78 57,78" fill="#FFD700" opacity="0.8"/>
+                <ellipse cx="57" cy="75" rx="2" ry="1.5" fill="#111"/>
+                <ellipse cx="63" cy="75" rx="2" ry="1.5" fill="#111"/>
+                <path d="M46,80 Q53,76 60,77 Q67,76 74,80 Q70,94 60,96 Q50,94 46,80 Z" fill="#111" stroke="#FFD700" stroke-width="1"/>
+                <polygon points="50,80 54,80 52,86" fill="#f5f0e8"/>
+                <polygon points="54,78 58,78 56,84" fill="#f5f0e8"/>
+                <polygon points="58,78 62,78 60,84" fill="#f5f0e8"/>
+                <polygon points="62,78 66,78 64,84" fill="#f5f0e8"/>
+                <polygon points="66,80 70,80 68,86" fill="#f5f0e8"/>
+                <polygon points="51,91 55,85 59,92" fill="#f5f0e8"/>
+                <polygon points="59,92 63,85 67,91" fill="#f5f0e8"/>
+                <path d="M52,88 Q60,86 68,88 Q65,96 60,97 Q55,96 52,88 Z" fill="#8B1a1a"/>
+                <line x1="60" y1="87" x2="60" y2="97" stroke="#6B0a0a" stroke-width="1" opacity="0.5"/>
+                <line x1="30" y1="76" x2="52" y2="79" stroke="#FFD700" stroke-width="0.8" opacity="0.6"/>
+                <line x1="28" y1="80" x2="52" y2="81" stroke="#FFD700" stroke-width="0.8" opacity="0.6"/>
+                <line x1="68" y1="79" x2="90" y2="76" stroke="#FFD700" stroke-width="0.8" opacity="0.6"/>
+                <line x1="68" y1="81" x2="92" y2="80" stroke="#FFD700" stroke-width="0.8" opacity="0.6"/>
+                <polygon points="56,120 60,112 64,120 60,128" fill="#FFD700" opacity="0.7"/>
+              </svg>
+            </div>
+            Santa Fe Hinchada
+          </div>
+          <p class="footer__desc">La plataforma digital de la hinchada de Independiente Santa Fe. Comunidad, pasión y el
+            corazón rojo de Bogotá.</p>
+          <div class="footer__social" aria-label="Redes sociales">
+            <a href="#" class="footer__social-link" aria-label="Facebook de Santa Fe Hinchada"
+              onclick="showToast('Facebook próximamente')">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Instagram de Santa Fe Hinchada"
+              onclick="showToast('Instagram próximamente')">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Twitter/X de Santa Fe Hinchada"
+              onclick="showToast('Twitter/X próximamente')">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="YouTube de Santa Fe Hinchada"
+              onclick="showToast('YouTube próximamente')">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M22.54 6.42a2.78 2.78 0 0 0-1.94-1.96C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.4 19.54C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z" />
+                <polygon fill="#0A0202" points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Comunidad</h4>
+          <ul class="footer__links">
+            <li><a href="#" data-page="comunidad" class="footer__link">Hinchas</a></li>
+            <li><a href="#" class="footer__link">Grupos de barras</a></li>
+            <li><a href="#" class="footer__link">Foro cardenal</a></li>
+            <li><a href="#" class="footer__link">Fotos y videos</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Servicios</h4>
+          <ul class="footer__links">
+            <li><a href="#" data-page="transporte" class="footer__link">Transporte</a></li>
+            <li><a href="#" data-page="boletas" class="footer__link">Boletas</a></li>
+            <li><a href="#" data-page="merch" class="footer__link">Merchandising</a></li>
+            <li><a href="#" data-page="noticias" class="footer__link">Noticias</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Soporte</h4>
+          <ul class="footer__links">
+            <li><a href="#" class="footer__link">Centro de ayuda</a></li>
+            <li><a href="#" class="footer__link">Términos de uso</a></li>
+            <li><a href="#" class="footer__link">Privacidad</a></li>
+            <li><a href="#" class="footer__link">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2026 Santa Fe Hinchada · Hecho con ❤️ roja y blanca en Bogotá, Colombia</p>
+        <div class="footer__bottom-links">
+          <a href="#" class="footer__bottom-link">Privacidad</a>
+          <a href="#" class="footer__bottom-link">Términos</a>
+          <a href="#" class="footer__bottom-link">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"
+    aria-label="Volver al inicio">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+      aria-hidden="true">
+      <polyline points="18 15 12 9 6 15" />
+    </svg>
+  </button>
+
+  <!-- Toast notification -->
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- ============================
+       JAVASCRIPT
+  ============================ -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
