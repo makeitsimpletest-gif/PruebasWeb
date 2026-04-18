@@ -1,0 +1,202 @@
+# 🏠 Homepage – *El Pescado CaoCao*
+
+## 🧠 Objetivo de la página
+
+* Generar confianza en segundos
+* Mostrar frescura y rapidez
+* Llevar al usuario a comprar lo más rápido posible
+
+---
+
+# 1. 🟡 HERO (lo primero que se ve)
+
+## Elementos:
+
+**Izquierda (mensaje):**
+
+> 🐟 *El Pescado CaoCao*
+> **Del mar a tu mesa, sin vueltas**
+>
+> Pescado fresco, entregado rápido y sin complicaciones.
+
+**Botones:**
+
+* 🟢 Ver productos
+* 🔵 Comprar ahora
+
+---
+
+**Derecha (visual):**
+
+* Mascota (pez) 👍
+* Fondo amarillo pastel
+* Splash de agua turquesa
+
+---
+
+💡 Tip pro:
+Aquí NO expliques demasiado. Solo:
+👉 frescura + rapidez + confianza
+
+---
+
+# 2. 🔒 BLOQUE DE CONFIANZA (muy importante)
+
+Iconos + texto corto:
+
+* ✅ **Calidad garantizada**
+* ❄️ **Cadena de frío asegurada**
+* 🚚 **Entrega rápida**
+* 🐟 **Producto fresco del día**
+
+👉 Esto elimina dudas antes de comprar
+
+---
+
+# 3. 🐠 CATEGORÍAS PRINCIPALES
+
+Grid (3–5 categorías):
+
+* Pescado fresco
+* Mariscos
+* Filetes listos
+* Combos familiares
+* Ofertas del día
+
+👉 Cada categoría con:
+
+* Imagen clara
+* Botón “Ver más”
+
+---
+
+# 4. 🔥 PRODUCTOS DESTACADOS
+
+Cards simples:
+
+**Cada producto debe tener:**
+
+* Foto limpia
+* Nombre
+* Precio
+* Botón: “Agregar al carrito”
+
+👉 Máximo 6 productos (no satures)
+
+---
+
+# 5. 🐟 BLOQUE CON MASCOTA (diferenciador)
+
+Aquí metes personalidad:
+
+Mascota diciendo:
+
+> “Yo me encargo de que te llegue fresco 😉”
+
+👉 Puedes usar una de las imágenes que generamos
+
+---
+
+# 6. 🚚 CÓMO FUNCIONA (reduce fricción)
+
+3 pasos:
+
+1. Elige tu pescado
+2. Nosotros lo preparamos
+3. Te lo llevamos fresco
+
+👉 Visual simple + iconos
+
+---
+
+# 7. ⭐ TESTIMONIOS (clave para confianza)
+
+Ejemplos:
+
+> “Llegó súper fresco y rápido”
+> — Cliente
+
+> “Ya es mi proveedor semanal”
+> — Restaurante
+
+👉 Aunque sean iniciales, esto convierte mucho
+
+---
+
+# 8. 📦 BLOQUE B2B (muy estratégico)
+
+No lo mezcles arriba — ponlo aquí:
+
+> ¿Tienes restaurante o negocio?
+> **Te surtimos con calidad y puntualidad**
+
+Botón:
+👉 “Quiero precios de mayoreo”
+
+---
+
+# 9. 📱 CTA FINAL (cierre fuerte)
+
+> 🐟 Compra hoy y recibe fresco en casa
+
+Botones:
+
+* Comprar ahora
+* Ver ofertas
+
+---
+
+# 10. 🦶 FOOTER
+
+* Logo
+* Contacto
+* WhatsApp
+* Redes sociales
+* Políticas
+* Link B2B
+
+---
+
+# 🎨 Cómo se debe ver (clave visual)
+
+* Fondo: amarillo pastel dominante
+* Secciones con bloques blancos para respirar
+* Azul profundo para estructura
+* Turquesa en botones
+* Rojo solo en promos
+
+---
+
+# ⚡ Flujo ideal del usuario
+
+1. Ve frescura → confía
+2. Ve productos → se interesa
+3. Ve facilidad → compra
+
+👉 Sin distracciones, sin fricción
+
+---
+
+# 🚨 Errores que debes evitar
+
+* Meter demasiados productos
+* Explicar demasiado arriba
+* No tener CTA claro
+* Mezclar B2B con B2C desde el inicio
+
+---
+
+# 🎯 Resultado esperado
+
+Una homepage que se sienta:
+
+* Fácil
+* Confiable
+* Visualmente atractiva
+* Rápida de usar
+
+Y sobre todo:
+👉 que haga comprar sin pensar demasiado
+
+---
+

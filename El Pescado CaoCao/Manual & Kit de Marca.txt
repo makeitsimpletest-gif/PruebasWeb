@@ -1,0 +1,389 @@
+# 🐟 Manual & Kit de Marca
+
+## **El Pescado CaoCao**
+
+---
+
+# 1. 🧭 Identidad de Marca
+
+## Nombre
+
+**El Pescado CaoCao**
+
+## Concepto
+
+Marca de ecommerce de pescado que combina:
+
+* Frescura del mar
+* Rapidez en entrega
+* Cercanía con el cliente
+
+Inspirado en el “movimiento constante”, reinterpretando el concepto *cao cao* como fluidez, dinamismo y conexión directa del mar a la mesa.
+
+---
+
+## Posicionamiento
+
+> “Pescado fresco, confiable y sin complicaciones, entregado de forma ágil tanto a clientes finales como a negocios.”
+
+---
+
+## Personalidad de Marca
+
+* Cercana
+* Dinámica
+* Confiable
+* Moderna
+* Accesible
+
+---
+
+# 2. 🎨 Sistema de Colores
+
+## Colores Principales
+
+### 🔵 Azul profundo (Confianza)
+
+* HEX: `#0B3C5D`
+* Uso:
+
+  * Textos principales
+  * Fondos B2B
+  * Elementos estructurales
+
+---
+
+### 🟢 Turquesa (Frescura)
+
+* HEX: `#2EC4B6`
+* Uso:
+
+  * Botones
+  * Highlights
+  * Elementos interactivos
+
+---
+
+### 🟡 Amarillo pastel (Base)
+
+* HEX: `#F7E8A4`
+* Uso:
+
+  * Fondos
+  * Branding general
+  * Redes sociales
+
+---
+
+## 🔴 Color de Acento
+
+### Rojo coral (Energía)
+
+* HEX: `#FF595E`
+* Uso:
+
+  * Promociones
+  * Llamados a la acción
+
+⚠️ Uso recomendado: máximo 10–15%
+
+---
+
+## ⚪ Colores Neutros
+
+### Blanco
+
+* HEX: `#FFFFFF`
+* Uso: limpieza visual, fondos
+
+### Gris oscuro
+
+* HEX: `#333333`
+* Uso: textos largos
+
+---
+
+## 📊 Proporción de uso
+
+* 60% Amarillo
+* 25% Azul profundo
+* 10% Turquesa
+* 5% Rojo
+
+---
+
+# 3. 🔤 Tipografías
+
+## Tipografía Principal (Branding)
+
+### **Baloo 2**
+
+* Uso:
+
+  * Logo
+  * Títulos
+  * Promociones
+
+Características:
+
+* Redondeada
+* Amigable
+* Altamente reconocible
+
+---
+
+## Tipografía Secundaria (Contenido)
+
+### **Poppins**
+
+* Uso:
+
+  * Web
+  * Descripciones
+  * Documentos
+  * B2B
+
+Características:
+
+* Limpia
+* Moderna
+* Legible
+
+---
+
+## Alternativa Corporativa
+
+Para entornos más formales (B2B):
+
+* Títulos: Baloo 2
+* Texto: **Inter**
+
+---
+
+# 4. 🐟 Logo
+
+## Versión B2C (Principal)
+
+Elementos:
+
+* Mascota (pez caricaturizado)
+* Nombre completo: **El Pescado CaoCao**
+* Estilo:
+
+  * Alegre
+  * Dinámico
+  * Colores vibrantes
+
+Uso:
+
+* Redes sociales
+* Ecommerce
+* Empaques
+* Publicidad
+
+---
+
+## Versión B2C Tipográfica (Secundaria)
+
+Elementos:
+
+* Solo texto
+* Sello de confianza (ej: “Calidad garantizada”)
+* Estilo limpio con volumen suave
+
+Uso:
+
+* Web
+* Landing pages
+* Material promocional
+
+---
+
+## Versión B2B
+
+Elementos:
+
+* Solo tipografía
+* Sin mascota (o uso mínimo)
+* Colores más sobrios
+
+Nombre recomendado:
+**El Pescado CaoCao – Proveedores del Mar**
+
+Uso:
+
+* Cotizaciones
+* Presentaciones
+* Documentos comerciales
+
+---
+
+# 5. 🐠 Mascota
+
+## Rol del personaje
+
+El pez es un **embajador de marca**, no solo decoración.
+
+Funciones:
+
+* Recomendar productos
+* Comunicar promociones
+* Representar frescura
+* Generar confianza
+
+---
+
+## Usos permitidos
+
+* Señalar ofertas
+* Explicar procesos
+* Acompañar mensajes
+* Generar cercanía
+
+---
+
+## Estilo visual
+
+* Caricatura amigable
+* Expresivo
+* Movimiento fluido
+* No exageradamente infantil
+
+---
+
+## Variaciones
+
+El personaje debe tener versiones:
+
+* Aprobando (👍)
+* Cocinando
+* Entregando
+* Mostrando producto
+
+---
+
+# 6. 🗣️ Tono de Comunicación
+
+## B2C (Cliente final)
+
+Características:
+
+* Cercano
+* Ligero
+* Directo
+* Amigable
+
+Ejemplos:
+
+* “Del mar a tu mesa sin vueltas”
+* “Fresco, rápido y sin drama”
+* “Así de fácil debería ser comprar pescado”
+
+---
+
+## B2B (Negocios)
+
+Características:
+
+* Profesional
+* Claro
+* Confiable
+
+Ejemplos:
+
+* “Abastecimiento confiable, calidad constante”
+* “Cadena de frío garantizada”
+* “Entrega puntual, siempre”
+
+---
+
+# 7. 🧩 Estilo Visual
+
+## Lineamientos
+
+* Bordes redondeados
+* Sombras suaves
+* Diseño limpio
+* Espacios amplios
+
+---
+
+## Iconografía
+
+* Estilo simple
+* Líneas limpias
+* Coherente con el personaje
+
+---
+
+# 8. 📦 Aplicaciones
+
+## Donde la marca debe destacar
+
+* Ecommerce
+* Redes sociales
+* Empaques
+* Stickers de entrega
+* Publicidad digital
+
+---
+
+## Uso estratégico
+
+### B2C:
+
+* Visual
+* Colorido
+* Emocional
+
+### B2B:
+
+* Limpio
+* Sobrio
+* Profesional
+
+---
+
+# 9. ⚠️ Reglas importantes
+
+Evitar:
+
+* Saturar con colores
+* Usar demasiadas tipografías
+* Infantilizar demasiado la marca
+* Visuales caóticos
+
+---
+
+# 10. 🎯 Eslogan
+
+Opciones:
+
+* “Del mar a tu mesa, sin vueltas”
+* “Frescura que se mueve contigo”
+* “Calidad que sí llega”
+* “Así debería llegar el pescado”
+
+---
+
+# ✅ Conclusión
+
+**El Pescado CaoCao** es una marca con alto potencial si se ejecuta correctamente:
+
+* Visualmente atractiva para B2C
+* Adaptable a un entorno profesional B2B
+* Memorable y diferenciada
+
+La clave está en:
+
+* Balancear diversión y confianza
+* Mantener consistencia visual
+* Ejecutar con disciplina
+
+---
+
+✔ Marca lista para implementación
+✔ Base sólida para ecommerce
+✔ Identidad clara y escalable
+
+---
